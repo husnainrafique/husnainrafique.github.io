@@ -1,2 +1,2 @@
-# uncg-csc-372.githib.io
+# uncg-csc-372.github.io
 My GitHub Pages site
