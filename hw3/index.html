@@ -4,19 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        Chickfila Dinig Guide
-    </title>
+    
     <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
+
+
 
 </head>
 
 <body>
     <header>
         <h1> Dining Guide </h1>
-        <p>Discover the best food sports </p>
+        <p>Discover The Best Food </p>
     </header>
     <main>
+        <script src="scripts.js"></script>
 
 
         <section class="introduction">
@@ -45,13 +47,13 @@
                     
                     Monday: 10:30 AM – 5:30 PM
                     Tuesday to Friday: 10:30 AM – 9:00 PM
-                    Saturday: 10:30 AM – 5:30 PM
+                    Saturday: 10:30 AM – 5:30 PMI
                     Sunday: Closed
                     As for their special ice cream, Yum Yum is known for its Black Cherry and Egg Nog flavors, which are especially popular during the holiday season. The shop also offers unique treats like Butter Pecan and seasonal options
                 </p>
                 <div class="flex-container">
                     <div class="dish">
-                        <img src="images/blackwalnut.png" alt="Black Walnut Ice Cream" onclick="expandImage(this);">
+                        <img src="images/blackwalnut.png" alt="Black Walnut Ice Cream" class="img" onclick="toggleZoom(this)">
                         <p class="bold">Black Walnut Ice-Cream</p>
                         <p> Black walnut ice cream features a rich, nutty flavor from the earthy, slightly bittersweet taste of black walnuts. The ice cream is creamy and smooth, with pieces of the nuts adding a crunchy texture and a unique, robust taste that sets it apart from other nut-based ice creams. Its flavor profile is deep and complex, making it a favorite for those who enjoy a more mature, refined ice cream experience. </p>
                         <p>Image credit: <a
@@ -60,7 +62,7 @@
 
                     </div>
                     <div class="dish">
-                        <img src="images/Peanutbutter.png" alt="Peanut Butter Ice Cream" onclick="expandImage(this);">
+                        <img src="images/Peanutbutter.png" alt="Peanut Butter Ice Cream"class="img"  onclick="toggleZoom(this);">
                         <p class="bold">Peanut Butter Ice-Cream </p>
                         <p> Peanut butter ice cream is a rich and creamy treat that combines the nutty flavor of peanut butter with a smooth, velvety texture. The ice cream has a slightly salty undertone, balanced by its sweetness, making it a perfect dessert for peanut butter lovers. It’s often paired with chocolate or caramel swirls for an extra indulgent twist, adding complexity to its flavor profile. </p>
                         <p>Image credit: <a
@@ -69,7 +71,7 @@
 
                     </div>
                     <div class="dish">
-                        <img src="images/watermelon.png" alt="Watermelon Ice Cream" onclick="expandImage(this);">
+                        <img src="images/watermelon.png" alt="Watermelon Ice Cream" class="img" onclick="toggleZoom(this)">
                         <p class="bold">Watermelon Ice-Cream </p>
                         <p>Watermelon ice cream is a refreshing, fruity dessert known for its vibrant pink color and sweet, summery flavor that perfectly captures the essence of fresh watermelon. Its creamy texture pairs well with subtle notes of melon, making it both light and indulgent. Often enjoyed with chunks of watermelon or a hint of mint, it's a delightful treat for warm weather </p>
                         <p>Image credit: <a
@@ -77,8 +79,10 @@
                                 Better Ice Cream and Hot Dogs</a> </p>
 
                     </div>
+                    
                 </div>
             </article>
+            <p><a href="mealplan.html"><button onclick="addmeal()">Create Your Meal Plan </button></a> </p>
         </section>
 
         <!--Second Recommended Place-->
@@ -101,7 +105,7 @@ Monday to Sunday: 11:00 AM to 2:00 AM.
 
                 <div class="flex-container">
                     <div class="dish">
-                        <img src="images/ChickenPhilly.jpg" alt="Chicken Philly" onclick="expandImage(this);">
+                        <img src="images/ChickenPhilly.jpg" alt="Chicken Philly" class="img" onclick="toggleZoom(this)"">
                         <p class="bold">Chicken Philly Cheesesteak</p>
                         <p> Chicken Philly Cheesesteak is a delicious twist on the classic Philly cheesesteak,
                             substituting chicken for beef.Toast the hoagie rolls if desired. Fill each roll with the
@@ -114,7 +118,7 @@ Monday to Sunday: 11:00 AM to 2:00 AM.
                     </div>
                     <div class="dish">
                         <img src="images/CheesyAvocadoSalad.jpg" alt="Cheesy Avocado Salad"
-                            onclick="expandImage(this);">
+                        class="img" onclick="toggleZoom(this)"">
                         <p class="bold"> Cheesy Avocado Salad </p>
                         <p> Mixed salad greens, avocados, almonds, dried cranberries, vegan parmesan cheese, gluten-free
                             bread, olive oil, sea salt, pepper, dried thyme. A healthy, family-friendly salad with the
@@ -125,7 +129,7 @@ Monday to Sunday: 11:00 AM to 2:00 AM.
 
                     </div>
                     <div class="dish">
-                        <img src="images/ChorizoTaco.png" alt="Chorizo TACOS!" onclick="expandImage(this);">
+                        <img src="images/ChorizoTaco.png" alt="Chorizo TACOS!" class="img" onclick="toggleZoom(this)"">
                         <p class="bold">Chorizo TACOS! </p>
                         <p> Chorizo tacos are a fantastic choice!. They are flavorful, easy to make, and perfect for any
                             taco night.Place a generous amount of the chorizo mixture onto each tortilla. Top with pico
@@ -138,6 +142,7 @@ Monday to Sunday: 11:00 AM to 2:00 AM.
                     </div>
                 </div>
             </article>
+            <p><a href="mealplan.html"><button onclick="addmeal()">Create Your Meal Plan </button></a> </p>
         </section>
 
         <!--Third  Recommended Place-->
@@ -163,7 +168,7 @@ Address: 1618 West Seafood Grill is located at 1618 W Friendly Avenue, Greensbor
                 <div class="flex-container">
                     <div class="dish">
                         <img src="images/crab-cake-a-classic.jpg" alt="Crab Cake a Classic"
-                            onclick="expandImage(this);">
+                        class="img" onclick="toggleZoom(this)"">
                         <p class="bold">Crab Cake a Classic</p>
                         <p> Crab cakes are indeed a classic, especially in Maryland where they are a beloved staple. The
                             traditional Maryland crab cake is known for its simplicity and focus on the crab meat
@@ -177,7 +182,7 @@ Address: 1618 West Seafood Grill is located at 1618 W Friendly Avenue, Greensbor
                     </div>
                     <div class="dish">
                         <img src="images/crab-cake-benedict-brunch.jpg" alt="crab-cake-benedict-brunch"
-                            onclick="expandImage(this);">
+                        class="img" onclick="toggleZoom(this)">
                         <p class="bold"> Crab-Cake-Benedict-Brunch </p>
                         <p> is a fantastic choice for brunch! It’s a delightful twist on the classic Eggs Benedict,
                             featuring savory crab cakes, perfectly poached eggs, and rich hollandaise sauce, all served
@@ -189,7 +194,7 @@ Address: 1618 West Seafood Grill is located at 1618 W Friendly Avenue, Greensbor
                     </div>
                     <div class="dish">
                         <img src="images/cinnamon-rolls-for-brunch.jpg" alt="cinnamon-rolls-for-brunch"
-                            onclick="expandImage(this);">
+                        class="img" onclick="toggleZoom(this)">
                         <p class="bold">Cinnamon Rolls for Brunch </p>
                         <p> Cinnamon rolls are a fantastic choice for brunch! Just like grandma used to make, these
                             rolls are perfect for any weekend brunch and stay soft thanks to a secret ingredient </p>
@@ -203,9 +208,9 @@ Address: 1618 West Seafood Grill is located at 1618 W Friendly Avenue, Greensbor
         </section>
     </main>
     <footer>
-        <p>Footer content here</p>
+        <p><a href="mealplan.html"><button onclick="addmeal()">Create Your Meal Plan </button></a> </p>
     </footer>
-    <script src="js/scripts.js"></script>
+    
 </body>
 
 
