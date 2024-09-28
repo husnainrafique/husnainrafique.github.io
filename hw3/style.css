@@ -25,15 +25,15 @@ header, footer {
 }
 
 .flex-container img {
-    width: 100px; /* Default size */
+    width: 100px; 
     transition: transform 0.3s ease;
+    
 }
 
 footer {
     margin-top: 20px;
 }
 
-/* Responsive styles */
 @media (max-width: 600px) {
     .flex-container {
         flex-direction: column;
@@ -59,20 +59,19 @@ footer {
     margin-top: 20px;
     text-align: center;
     font-family: Arial, sans-serif;
-    display: none; /* Hidden by default */
-}
-/* CSS for expanded image */
-.expanded {
-    transform: scale(1.5); /* Scale up the image to 150% of its original size */
-    transition: transform 0.3s ease; /* Smooth transition for the transform */
+    display: none; 
 }
 
-
-.large-img {
-    width: 300px;
+.img {
+    width: 150px;
+    height: 150px;
+    cursor: zoom-in;
+    
 }
-
-.small-img {
-    width: 100px;
-    cursor: pointer;
+.zoom {
+    transform: scale(4); 
+    transition: transform 0.3s ease; 
+    z-index: 1500; 
+    position: relative;
+    cursor: zoom-out;
 }
